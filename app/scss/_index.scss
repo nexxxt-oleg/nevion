@@ -176,6 +176,11 @@ a {
       transform: translate3d(-50%, -50%, 0) scale3d(1, 1, 1)
     }
   }
+
+  &--h64 {
+    height: 64px;
+    border-radius: 32px;
+  }
 }
 
 .home-slider__item {
@@ -764,3 +769,220 @@ button:focus {
   }
 }
 
+
+.dealers {
+  padding-top: 192px;
+  padding-bottom: 85px;
+  border-radius: 0 0 40px 40px;
+  background: url("../images/dist/bg-diler.jpg") 50% 0 no-repeat;
+  background-size: cover;
+  &__desc {
+    padding-bottom: 40px;
+    h1 {
+      font-weight: 700;
+      font-size: 40px;
+      color: #fff;
+      margin: 0 0 20px;
+    }
+    p {
+      margin: 0;
+      font-weight: 500;
+      font-size: 20px;
+      color: #fff;
+    }
+  }
+  &__offers {
+    padding-top: 98px;
+    &__title {
+      padding-top: 37px;
+      font-weight: 700;
+      font-size: 24px;
+      text-transform: uppercase;
+      color: #fff;
+      padding-bottom: 30px;
+    }
+    &__item {
+      backdrop-filter: blur(10px);
+      border-radius: 40px;
+      display: flex;
+      align-items: flex-start;
+      padding: 40px 40px 25px 40px;
+      gap: 27px;
+      margin-bottom: 15px;
+      &--n1 {
+        background: rgba(10, 12, 17, 0.5);
+      }
+      &--n2 {
+        background: rgba(34, 44, 70, 0.5);
+      }
+      &--n3 {
+        background: rgba(30, 117, 174, 0.5);
+      }
+      &--n4 {
+        background: rgba(255, 255, 255, 0.5);
+      }
+
+      &__ico {
+        min-width: 36px;
+      }
+
+      &__desc {
+        flex-grow: 1;
+        h2 {
+          font-weight: 400;
+          font-size: 20px;
+          color: #fff;
+          margin: 0 0 25px;
+        }
+        p {
+          margin: 0 0 15px;
+          font-size: 16px;
+          color: #fff;
+        }
+        ul {
+          list-style-type: none;
+          padding: 0;
+          margin: 0;
+          li {
+            padding: 0 0 15px 26px;
+            position: relative;
+            font-size: 16px;
+            color: #fff;
+            &::after {
+              content: '';
+              display: block;
+              width: 4px;
+              height: 4px;
+              border-radius: 2px;
+              background-color: #fff;
+              position: absolute;
+              z-index: 1;
+              top: 10px;
+              left: 12px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+.dealers-partners {
+  padding: 105px 0 100px;
+  &__header {
+    padding-bottom: 140px;
+    h2 {
+      font-weight: 700;
+      font-size: 24px;
+      text-transform: uppercase;
+      color: #222c46;
+      margin: 0 0 30px;
+    }
+  }
+
+  &__list {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    counter-reset: num;
+    li {
+      position: relative;
+      padding-left: 105px;
+      display: flex;
+      align-items: center;
+      font-weight: 400;
+      font-size: 20px;
+      color: #222c46;
+      min-height: 58px;
+      &::before {
+        content: '0'counter(num);
+        counter-increment: num;
+        display: inline-block;
+        position: absolute;
+        left: 5px;
+        top: 0;
+        height: 58px;
+        font-weight: 700;
+        font-size: 48px;
+        text-transform: uppercase;
+        color: #707686;
+        line-height: 58px;
+      }
+      &:not(:last-child) {
+        margin-bottom: 80px;
+        &::after {
+          content: '';
+          display: block;
+          width: 100%;
+          bottom: -40px;
+          height: 1px;
+          background: #cbd3e7;
+          position: absolute;
+          left: 0;
+        }
+      }
+    }
+  }
+
+  &__order {
+    width: 100%;
+    max-width: 880px;
+    margin: 0 auto;
+    background-color: #222c46;
+    border-radius: 40px;
+    background-position: 100% 100%;
+    background-repeat: no-repeat;
+    background-image: url("../images/dist/bg-form-order.svg");
+    background-size: 685px 426px;
+    padding: 80px 150px;
+    &__header {
+      text-align: center;
+      padding-bottom: 40px;
+      p {
+        margin: 0;
+        font-weight: 400;
+        font-size: 16px;
+        color: #fff;
+      }
+    }
+    &__title {
+      font-weight: 700;
+      font-size: 24px;
+      text-transform: uppercase;
+      color: #fff;
+      padding-bottom: 14px;
+    }
+
+    &__footer {
+      padding-top: 20px;
+    }
+    &__submit {
+      display: flex;
+      justify-content: center;
+      padding-top: 40px;
+      .btn {
+        width: 220px;
+      }
+    }
+  }
+
+}
+.form-item {
+  padding-bottom: 20px;
+  &__inp {
+    display: block;
+    width: 100%;
+    border: none;
+    background: #fff;
+    border-radius: 12px;
+    padding: 10px 10px 10px 20px;
+    height: 64px;
+    font-weight: 500;
+    font-size: 16px;
+    color: #000;
+    &::placeholder {
+      color: #81848b;
+      opacity: 1;
+    }
+  }
+}
