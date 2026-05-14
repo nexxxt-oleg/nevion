@@ -16,30 +16,53 @@
     <div class="container">
         <div class="row footer__row">
             <div class="col-lg-4">
-                <a href="tel:88003007801" class="footer__phone">8 800 300-78-01</a>
-                <a href="mailto:info@neviol.ru" class="footer__email">info@neviol.ru</a>
-                <button class="btn btn--border">
-                    <span>Обратная связь</span>
-                </button>
+                <div class="footer__left">
+                    <a href="/" class="footer__logo">
+                        <img src="images/dist/logo.svg" loading="lazy" width="160" height="28" alt="">
+                    </a>
+                    <a href="tel:88003007801" class="footer__phone">8 800 300-78-01</a>
+                    <a href="mailto:info@neviol.ru" class="footer__email">info@neviol.ru</a>
+                    <button class="btn btn--border">
+                        <span>Обратная связь</span>
+                    </button>
+                </div>
             </div>
             <div class="col-lg-2">
-                <nav class="footer__nav">
+                <nav class="footer__nav footer__nav--first">
                     <div class="footer__nav__caption">Нэвиол</div>
-                    <ul class="nav footer__nav__list">
-                        <li><a href="">О компании</a></li>
-                        <li><a href="">Нэвиол в СМИ</a></li>
-                        <li><a href="">Дилерам</a></li>
-                        <li><a href="">Контакты</a></li>
-                    </ul>
+                    <button class="footer__nav__caption-mob collapsed" data-bs-toggle="collapse"
+                            data-bs-target="#footer1">
+                        <span>Нэвиол</span>
+                        <svg width="12" height="7">
+                            <use xlink:href="#svg-down"></use>
+                        </svg>
+                    </button>
+                    <div class="accordion-collapse collapse" id="footer1">
+                        <ul class="nav footer__nav__list">
+                            <li><a href="">О компании</a></li>
+                            <li><a href="">Нэвиол в СМИ</a></li>
+                            <li><a href="">Дилерам</a></li>
+                            <li><a href="">Контакты</a></li>
+                        </ul>
+                    </div>
                 </nav>
             </div>
             <div class="col-lg-2">
                 <nav class="footer__nav">
                     <div class="footer__nav__caption">продукция</div>
-                    <ul class="nav footer__nav__list">
-                        <li><a href="">Фордек – 124</a></li>
-                        <li><a href="">Тележка – 111</a></li>
-                    </ul>
+                    <button class="footer__nav__caption-mob collapsed" data-bs-toggle="collapse"
+                            data-bs-target="#footer2">
+                        <span>продукция</span>
+                        <svg width="12" height="7">
+                            <use xlink:href="#svg-down"></use>
+                        </svg>
+                    </button>
+                    <div class="accordion-collapse collapse" id="footer2">
+                        <ul class="nav footer__nav__list">
+                            <li><a href="">Фордек – 124</a></li>
+                            <li><a href="">Тележка – 111</a></li>
+                        </ul>
+                    </div>
                 </nav>
             </div>
 
@@ -152,7 +175,7 @@
                 <div class="col-lg-4">
                     <div class="footer__copy">© ООО «Нэвиол», 2026.</div>
                 </div>
-                <div class="col-lg-4">
+                <div class="col-lg-4 footer__bottom__col-center">
                     <a href="" class="footer__bottom__link">Политика конфиденциальности</a>
                 </div>
                 <div class="col-lg-4 d-flex">

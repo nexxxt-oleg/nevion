@@ -1,3 +1,459 @@
 @media screen and (max-width: 1399px) {
+  .home-slider__item__title {
+    font-size: 50px;
+  }
+  .made-in-russia {
+    height: 140px;
+    width: 60px;
 
+    svg {
+      width: 60px;
+      height: 100px;
+    }
+  }
+  .home-about__adv {
+    padding: 20px;
+    border-radius: 20px;
+  }
+  .home-about {
+    background-size: cover;
+  }
+  .subscription {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+}
+@media screen and (min-width: 992px) {
+
+  .footer__nav__caption-mob {
+    display: none;
+  }
+  .footer__nav {
+    .collapse:not(.show) {
+      display: block;
+    }
+  }
+}
+@media screen and (max-width: 991px) {
+  .dealers-partners__order {
+    padding: 40px 50px;
+  }
+  .dealers-partners__header {
+    padding-bottom: 40px;
+  }
+  .dealers-partners {
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+  .dealers {
+    padding-top: 140px;
+  }
+  .dealers__offers {
+    padding-top: 40px;
+  }
+  .footer__copy {
+    margin-bottom: 20px;
+  }
+  .footer__bottom__col-center {
+    order: -1;
+  }
+  .footer__web__desc {
+    padding-right: 0;
+  }
+  .footer__web {
+    margin-right: auto;
+  }
+  .footer__bottom {
+    text-align: center;
+  }
+  .footer__row {
+    padding-bottom: 15px;
+  }
+  .footer__bottom {
+    padding: 0 0 30px;
+    border-top: none;
+  }
+  .footer__nav {
+    padding-bottom: 15px;
+    &__caption-mob {
+      display: flex;
+      align-items: center;
+      background: transparent;
+      border: none;
+      width: 100%;
+      padding: 15px 0 0;
+      font-family: "Montserrat", sans-serif;
+      font-weight: 600;
+      font-size: 14px;
+      text-transform: uppercase;
+      color: #fff;
+      justify-content: space-between;
+      svg {
+        transition: all 0.2s ease;
+      }
+      &:not(.collapsed) {
+        svg {
+          transform: rotate(180deg);
+        }
+      }
+    }
+    &--first {
+      border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+    }
+  }
+  .footer__nav__caption {
+    display: none;
+  }
+  .footer__right {
+    justify-content: center;
+    padding-top: 15px;
+  }
+  .footer__left {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 20px;
+  }
+  .footer__logo {
+    display: block;
+    width: 160px;
+    margin-bottom: 20px;
+  }
+  .footer__phone{
+    font-size: 20px;
+    margin-bottom: 12px;
+  }
+  .footer__email {
+    font-size: 16px;
+    margin-bottom: 20px;
+  }
+  .footer {
+    padding-top: 40px;
+    border-radius: 20px 20px 0 0;
+  }
+  .custom-checkbox__val {
+    font-size: 12px;
+  }
+  .home-video,
+  .home-partners {
+    padding-bottom: 50px;
+  }
+  .subscription__form {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 400px;
+  }
+  .subscription__title {
+    text-align: center;
+    font-size: 16px
+  }
+  .subscription__form__inp {
+    width: 100%;
+    height: 44px;
+    padding: 5px 15px;
+    margin-bottom: 20px;
+    font-size: 14px;
+  }
+  .subscription__form__footer {
+    padding-left: 0;
+  }
+  .subscription__form__submit {
+    position: relative;
+    top: auto;
+    right: auto;
+    font-size: 14px !important;
+    width: 100%;
+  }
+  .subscription__text {
+    font-size: 14px;
+    text-align: center;
+    padding-bottom: 20px;
+  }
+  .subscription {
+    padding: 40px 20px;
+    flex-direction: column;
+  }
+  .home-products__item__caption {
+    font-size: 32px;
+  }
+  .home-products__item__text {
+    min-height: auto;
+    font-size: 16px;
+    padding-bottom: 20px;
+  }
+  .home-products__item__header {
+    height: auto;
+    padding: 40px 30px 30px;
+  }
+  .home-products__item {
+    height: auto;
+  }
+  .home-products {
+    padding: 50px 0;
+  }
+  .home-about__adv {
+    margin-bottom: 15px;
+  }
+  .home-about {
+    padding-top: 40px;
+    padding-bottom: 30px;
+  }
+  .header__nav {
+    display: none;
+  }
+  .header__right-mob {
+    gap: 20px;
+  }
+  .home-slider__item__desc {
+    height: auto;
+    width: 100%;
+    padding-top: 30px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .home-slider__item__title {
+    font-size: 32px;
+  }
+  .home-slider__item__text {
+    font-size: 16px;
+    padding-bottom: 20px;
+  }
+  .btn {
+    height: 44px;
+    border-radius: 22px;
+    font-size: 12px;
+  }
+  .home-slider__item__img {
+    width: 300px;
+    right: 50%;
+    margin-right: -150px;
+  }
+  .home-slider__item {
+    height: 460px;
+  }
+  .home-slider {
+    height: 550px;
+    border-radius: 0 0 20px 20px;
+  }
+  .home-slider__footer {
+    padding-bottom: 20px;
+  }
+  .home-slider__paginate {
+    justify-content: center;
+  }
+  .home-prim__item {
+    height: auto;
+    min-height: 220px;
+  }
+  .home-prim__item__footer-icons li {
+    height: 110px;
+  }
+  .home-partners__list {
+    gap: 0;
+    justify-content: flex-start;
+  }
+  .subscription__desc {
+    min-width: 100%;
+  }
+
+}
+@media screen and (max-width: 768px) {
+  .dealers-partners__order {
+    padding-left: 20px;
+    padding-right: 20px;
+    border-radius: 20px;
+  }
+  .form-item__inp {
+    height: 44px;
+    font-size: 14px;
+  }
+  .dealers-partners__order__header {
+    padding-bottom: 20px;
+  }
+  .dealers-partners__order__title {
+    font-size: 16px;
+  }
+  .dealers-partners__order__header p {
+    font-size: 14px;
+  }
+  .dealers__offers__item {
+    padding: 20px 20px 10px;
+    gap: 20px;
+    border-radius: 20px;
+  }
+  .dealers__offers__item__desc p {
+    font-size: 14px;
+    margin-bottom: 10px;
+  }
+  .dealers__offers__item__desc h2 {
+    font-size: 16px;
+    margin-bottom: 15px;
+  }
+  .dealers__offers__title {
+    padding-top: 0;
+  }
+  .dealers__offers__item__desc ul li {
+    font-size: 14px;
+  }
+  .dealers {
+    padding-top: 110px;
+    border-radius: 0 0 20px 20px;
+    padding-bottom: 40px;
+  }
+  .dealers-partners__list li:before {
+    font-size: 40px;
+    line-height: 1.1;
+  }
+  .dealers-partners__list li {
+    padding-left: 80px;
+    font-size: 16px;
+  }
+  .dealers-partners__list li:not(:last-child):after {
+    bottom: -20px;
+  }
+  .dealers-partners__list li:not(:last-child) {
+    margin-bottom: 40px;
+  }
+  .dealers__desc h1 {
+    font-size: 28px;
+  }
+  .dealers__desc p {
+    font-size: 16px;
+  }
+  .subscription {
+    border-radius: 20px;
+    padding: 40px 20px;
+  }
+  .footer__right__wrap {
+    width: 100%;
+  }
+  .dealers-partners__header h2 {
+    font-size: 20px;
+    margin-bottom: 10px;
+  }
+  .subscription__title {
+    padding-bottom: 6px;
+  }
+  .home-partners, .home-video {
+    padding-bottom: 40px;
+  }
+  .made-in-russia {
+    display: none;
+  }
+  .header__wrap {
+    padding: 16px 20px;
+    margin: 0;
+    .row {
+      height: auto;
+    }
+  }
+  .header__logo {
+    height: auto;
+    padding-bottom: 6px;
+    img {
+      width: 98px;
+      height: 17px;
+    }
+  }
+  .home-prim__item {
+    border-radius: 20px;
+  }
+  .home-slider {
+    height: 525px;
+    padding-top: 75px;
+  }
+  .home-prim__item__title {
+    font-size: 20px;
+    padding: 20px 20px 0;
+  }
+  .home-prim__item__footer {
+    padding: 0 20px 20px 20px;
+    min-height: auto;
+    p {
+      font-size: 16px;
+      color: #454340;
+    }
+  }
+  .home-prim__item__footer-icons li {
+    padding: 30px;
+    svg {
+      max-height: 100%;
+      width: auto;
+    }
+  }
+  .home-prim {
+    padding-bottom: 0;
+  }
+
+  .home-about {
+    border-radius: 20px;
+    &__adv {
+      height: auto;
+      min-height: auto;
+      &__ico {
+        height: auto;
+        padding-bottom: 20px;
+      }
+      h3 {
+        padding-bottom: 20px;
+        font-size: 18px;
+      }
+      &__text {
+        font-size: 14px;
+      }
+    }
+    &__logo {
+      padding: 0 20px;
+      img {
+        width: 230px;
+        height: 40px;
+      }
+    }
+    &__desc {
+      padding: 20px;
+      h2 {
+        font-size: 16px;
+        margin-bottom: 20px;
+      }
+      p {
+        font-size: 14px;
+      }
+    }
+    &__list {
+      padding-top: 0;
+    }
+  }
+  .home-products {
+    padding: 30px 0;
+  }
+  .caption-h2 {
+    padding-bottom: 15px;
+    font-size: 20px;
+  }
+  .home-products__item__img {
+    background-position: 0 0;
+    background-size: cover;
+    img {
+      width: 250px;
+      height: auto;
+    }
+  }
+  .home-products__item__caption {
+    margin-bottom: 10px;
+  }
+  .home-products__item,
+  .video-box {
+    border-radius: 20px;
+  }
+  .video-box__play {
+    width: 64px;
+    height: 64px;
+    margin: -32px 0 0 -32px;
+  }
+  .home-slider__item {
+    height: 450px;
+  }
 }

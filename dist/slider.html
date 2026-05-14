@@ -15,7 +15,8 @@
     <link rel="icon" href="images/favicon.png">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+          rel="stylesheet">
 
     <link rel="stylesheet" href="css/vendor.css">
 
@@ -25,33 +26,63 @@
 <body>
 <div class="main " id="top">
 
-  <header class="header">
-      <div class="container">
-          <div class="header__wrap">
-              <div class="row align-items-center">
-                  <div class="col-lg-3">
-                      <a href="/" class="header__logo">
-                          <img src="images/dist/logo.svg" loading="lazy" width="185" height="32" alt="">
-                      </a>
-                  </div>
-                  <div class="col-lg-5">
-                      <ul class="nav header__nav">
-                          <li><a href="">Нэвиол</a></li>
-                          <li><a href="">Продукция</a></li>
-                          <li><a href="">Дилерам</a></li>
-                          <li><a href="">Контакты</a></li>
-                      </ul>
-                  </div>
-                  <div class="col-lg-4">
-                      <div class="header__right">
-                          <a href="tel:88003007801" class="header__phone">8 800 300-78-01</a>
-                          <button class="btn btn--border"><span>Заказать звонок</span></button>
-                      </div>
-                  </div>
-              </div>
-          </div>
-      </div>
-  </header>
+    <header class="header">
+        <div class="container">
+            <div class="header__wrap">
+                <div class="row align-items-center">
+                    <div class="col-xl-3 col-lg-4 col-6">
+                        <a href="/" class="header__logo">
+                            <img src="images/dist/logo.svg" loading="lazy" width="185" height="32" alt="">
+                        </a>
+                    </div>
+                    <div class="col-xl-5 col-lg-8 col-6 d-flex align-items-center">
+                        <ul class="nav header__nav">
+                            <li><a href="">Нэвиол</a></li>
+                            <li><a href="">Продукция</a></li>
+                            <li><a href="">Дилерам</a></li>
+                            <li><a href="">Контакты</a></li>
+                        </ul>
+                        <div class="ms-auto d-flex d-lg-none header__right-mob">
+                            <a href="" class="header__right-mob__tel">
+                                <svg width="20" height="20" viewBox="0 0 20 20" fill="none"
+                                     xmlns="http://www.w3.org/2000/svg">
+                                    <g clip-path="url(#clip0_613_24)">
+                                        <path d="M0 5.19642C0 3.80506 0.524918 2.50547 1.52476 1.51437L2.39963 0.756404C3.40767 -0.251484 5.04101 -0.251484 6.04906 0.756404C6.07405 0.781397 7.61561 2.78897 7.61561 2.78897C8.57366 3.78046 8.57366 5.36317 7.61561 6.35466L6.64896 7.57107C7.86557 10.3284 9.75668 12.2278 12.4231 13.3611L13.6397 12.3864C14.6313 11.4367 16.2061 11.4367 17.2059 12.3864C17.2059 12.3864 19.2138 13.9277 19.2388 13.9527C20.2468 14.9606 20.2468 16.5936 19.2806 17.5597L18.4475 18.5177C17.4895 19.4756 16.1897 20.0004 14.7981 20.0004C8.44048 20 0 11.5694 0 5.20462V5.19642Z"
+                                              fill="white"/>
+                                    </g>
+                                    <defs>
+                                        <clipPath id="clip0_613_24">
+                                            <rect width="20" height="20" fill="white"/>
+                                        </clipPath>
+                                    </defs>
+                                </svg>
+                            </a>
+
+                            <a href="" class="header__right-mob__toggle">
+                                <svg width="30" height="20" viewBox="0 0 30 20" fill="none"
+                                     xmlns="http://www.w3.org/2000/svg">
+
+                                    <path d="M1.2498 8.74989H28.7496C29.4398 8.74989 29.9994 9.30947 29.9994 9.99971C29.9994 10.6899 29.4398 11.2495 28.7496 11.2495H1.2498C0.55957 11.2495 0 10.6899 0 9.99971C0 9.30947 0.55957 8.74989 1.2498 8.74989Z"
+                                          fill="white"/>
+                                    <path d="M1.2498 0H28.7496C29.4398 0 29.9994 0.559576 29.9994 1.24982C29.9994 1.94006 29.4398 2.49963 28.7496 2.49963H1.2498C0.55957 2.50022 0 1.94064 0 1.24982C0 0.559576 0.55957 0 1.2498 0Z"
+                                          fill="white"/>
+                                    <path d="M1.2498 17.5004H28.7496C29.4398 17.5004 29.9994 18.0599 29.9994 18.7502C29.9994 19.4404 29.4398 20 28.7496 20H1.2498C0.55957 20 0 19.4404 0 18.7502C0 18.0599 0.55957 17.5004 1.2498 17.5004Z"
+                                          fill="white"/>
+
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-xl-4 d-none d-xl-block">
+                        <div class="header__right">
+                            <a href="tel:88003007801" class="header__phone">8 800 300-78-01</a>
+                            <button class="btn btn--border"><span>Заказать звонок</span></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
 
 <div style="padding: 210px 0 100px">
     <div class="container">
@@ -153,30 +184,53 @@
     <div class="container">
         <div class="row footer__row">
             <div class="col-lg-4">
-                <a href="tel:88003007801" class="footer__phone">8 800 300-78-01</a>
-                <a href="mailto:info@neviol.ru" class="footer__email">info@neviol.ru</a>
-                <button class="btn btn--border">
-                    <span>Обратная связь</span>
-                </button>
+                <div class="footer__left">
+                    <a href="/" class="footer__logo">
+                        <img src="images/dist/logo.svg" loading="lazy" width="160" height="28" alt="">
+                    </a>
+                    <a href="tel:88003007801" class="footer__phone">8 800 300-78-01</a>
+                    <a href="mailto:info@neviol.ru" class="footer__email">info@neviol.ru</a>
+                    <button class="btn btn--border">
+                        <span>Обратная связь</span>
+                    </button>
+                </div>
             </div>
             <div class="col-lg-2">
-                <nav class="footer__nav">
+                <nav class="footer__nav footer__nav--first">
                     <div class="footer__nav__caption">Нэвиол</div>
-                    <ul class="nav footer__nav__list">
-                        <li><a href="">О компании</a></li>
-                        <li><a href="">Нэвиол в СМИ</a></li>
-                        <li><a href="">Дилерам</a></li>
-                        <li><a href="">Контакты</a></li>
-                    </ul>
+                    <button class="footer__nav__caption-mob collapsed" data-bs-toggle="collapse"
+                            data-bs-target="#footer1">
+                        <span>Нэвиол</span>
+                        <svg width="12" height="7">
+                            <use xlink:href="#svg-down"></use>
+                        </svg>
+                    </button>
+                    <div class="accordion-collapse collapse" id="footer1">
+                        <ul class="nav footer__nav__list">
+                            <li><a href="">О компании</a></li>
+                            <li><a href="">Нэвиол в СМИ</a></li>
+                            <li><a href="">Дилерам</a></li>
+                            <li><a href="">Контакты</a></li>
+                        </ul>
+                    </div>
                 </nav>
             </div>
             <div class="col-lg-2">
                 <nav class="footer__nav">
                     <div class="footer__nav__caption">продукция</div>
-                    <ul class="nav footer__nav__list">
-                        <li><a href="">Фордек – 124</a></li>
-                        <li><a href="">Тележка – 111</a></li>
-                    </ul>
+                    <button class="footer__nav__caption-mob collapsed" data-bs-toggle="collapse"
+                            data-bs-target="#footer2">
+                        <span>продукция</span>
+                        <svg width="12" height="7">
+                            <use xlink:href="#svg-down"></use>
+                        </svg>
+                    </button>
+                    <div class="accordion-collapse collapse" id="footer2">
+                        <ul class="nav footer__nav__list">
+                            <li><a href="">Фордек – 124</a></li>
+                            <li><a href="">Тележка – 111</a></li>
+                        </ul>
+                    </div>
                 </nav>
             </div>
 
@@ -289,7 +343,7 @@
                 <div class="col-lg-4">
                     <div class="footer__copy">© ООО «Нэвиол», 2026.</div>
                 </div>
-                <div class="col-lg-4">
+                <div class="col-lg-4 footer__bottom__col-center">
                     <a href="" class="footer__bottom__link">Политика конфиденциальности</a>
                 </div>
                 <div class="col-lg-4 d-flex">
@@ -317,30 +371,40 @@
 <div style="display: none">
     <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
 
-        <symbol id="svg-next"  viewBox="0 0 192 352">
-            <path stroke-width="0" fill="currentColor" d="m192,176c0,4.09-1.56,8.19-4.69,11.31L27.31,347.31c-6.25,6.25-16.38,6.25-22.62,0s-6.25-16.38,0-22.62l148.69-148.69L4.69,27.31C-1.56,21.06-1.56,10.94,4.69,4.69s16.38-6.25,22.62,0l160,160c3.12,3.12,4.69,7.22,4.69,11.31h0Z"/>
+        <symbol id="svg-next" viewBox="0 0 192 352">
+            <path stroke-width="0" fill="currentColor"
+                  d="m192,176c0,4.09-1.56,8.19-4.69,11.31L27.31,347.31c-6.25,6.25-16.38,6.25-22.62,0s-6.25-16.38,0-22.62l148.69-148.69L4.69,27.31C-1.56,21.06-1.56,10.94,4.69,4.69s16.38-6.25,22.62,0l160,160c3.12,3.12,4.69,7.22,4.69,11.31h0Z"/>
         </symbol>
 
 
         <symbol id="svg-prev" viewBox="0 0 192 352">
-            <path stroke-width="0" fill="currentColor" d="m0,176C0,171.91,1.56,167.81,4.69,164.69L164.69,4.69c6.25-6.25,16.38-6.25,22.62,0s6.25,16.38,0,22.62L38.62,176l148.69,148.69c6.25,6.25,6.25,16.38,0,22.62s-16.38,6.25-22.62,0L4.69,187.31c-3.12-3.12-4.69-7.22-4.69-11.31h0Z"/>
+            <path stroke-width="0" fill="currentColor"
+                  d="m0,176C0,171.91,1.56,167.81,4.69,164.69L164.69,4.69c6.25-6.25,16.38-6.25,22.62,0s6.25,16.38,0,22.62L38.62,176l148.69,148.69c6.25,6.25,6.25,16.38,0,22.62s-16.38,6.25-22.62,0L4.69,187.31c-3.12-3.12-4.69-7.22-4.69-11.31h0Z"/>
         </symbol>
 
         <symbol id="svg-close" viewBox="0 0 311.16 311.19">
-            <path stroke-width="0" fill="currentColor" fill-rule="evenodd" d="m6.26,274.77c-8.33,8.33-8.33,21.84,0,30.17s21.84,8.33,30.17,0l119.15-119.17,119.16,119.16c8.33,8.33,21.84,8.33,30.17,0s8.33-21.84,0-30.17l-119.16-119.16,119.16-119.18c8.33-8.33,8.33-21.84,0-30.17-8.33-8.33-21.84-8.33-30.17,0l-119.15,119.17L36.42,6.26C28.09-2.07,14.58-2.07,6.25,6.26c-8.33,8.33-8.33,21.84,0,30.17l119.17,119.17L6.26,274.77Z"/>
+            <path stroke-width="0" fill="currentColor" fill-rule="evenodd"
+                  d="m6.26,274.77c-8.33,8.33-8.33,21.84,0,30.17s21.84,8.33,30.17,0l119.15-119.17,119.16,119.16c8.33,8.33,21.84,8.33,30.17,0s8.33-21.84,0-30.17l-119.16-119.16,119.16-119.18c8.33-8.33,8.33-21.84,0-30.17-8.33-8.33-21.84-8.33-30.17,0l-119.15,119.17L36.42,6.26C28.09-2.07,14.58-2.07,6.25,6.26c-8.33,8.33-8.33,21.84,0,30.17l119.17,119.17L6.26,274.77Z"/>
         </symbol>
 
         <symbol id="svg-bottom" viewBox="0 0 451.85 257.57">
-            <path stroke-width="0" fill="currentColor" d="m225.92,257.57c-8.1,0-16.2-3.09-22.37-9.26L9.27,54.02C-3.09,41.66-3.09,21.62,9.27,9.27c12.35-12.35,32.39-12.35,44.75,0l171.91,171.91L397.83,9.27c12.36-12.35,32.39-12.35,44.74,0,12.36,12.35,12.36,32.39,0,44.75l-194.28,194.29c-6.18,6.17-14.27,9.26-22.37,9.26Z"/>
+            <path stroke-width="0" fill="currentColor"
+                  d="m225.92,257.57c-8.1,0-16.2-3.09-22.37-9.26L9.27,54.02C-3.09,41.66-3.09,21.62,9.27,9.27c12.35-12.35,32.39-12.35,44.75,0l171.91,171.91L397.83,9.27c12.36-12.35,32.39-12.35,44.74,0,12.36,12.35,12.36,32.39,0,44.75l-194.28,194.29c-6.18,6.17-14.27,9.26-22.37,9.26Z"/>
         </symbol>
 
         <symbol id="svg-filter" viewBox="0 0 480 320.19">
-            <path stroke-width="0" fill="currentColor" d="m16,96.1h49.6c8.79,43.3,51.02,71.27,94.32,62.48,31.48-6.39,56.09-31,62.48-62.48h241.6c8.84,0,16-7.16,16-16s-7.16-16-16-16h-241.6C213.61,20.8,171.38-7.18,128.08,1.62c-31.48,6.39-56.09,31-62.48,62.48H16C7.16,64.1,0,71.26,0,80.1s7.16,16,16,16ZM144,32.1c26.51,0,48,21.49,48,48s-21.49,48-48,48-48-21.49-48-48,21.49-48,48-48Z"/>
-            <path stroke-width="0" fill="currentColor" d="m464,224.1h-49.6c-8.79-43.3-51.02-71.27-94.32-62.48-31.48,6.39-56.09,31-62.48,62.48H16c-8.84,0-16,7.16-16,16s7.16,16,16,16h241.6c8.79,43.3,51.02,71.27,94.32,62.48,31.48-6.39,56.09-31,62.48-62.48h49.6c8.84,0,16-7.16,16-16s-7.16-16-16-16h0Zm-128,64c-26.51,0-48-21.49-48-48s21.49-48,48-48,48,21.49,48,48-21.49,48-48,48Z"/>
+            <path stroke-width="0" fill="currentColor"
+                  d="m16,96.1h49.6c8.79,43.3,51.02,71.27,94.32,62.48,31.48-6.39,56.09-31,62.48-62.48h241.6c8.84,0,16-7.16,16-16s-7.16-16-16-16h-241.6C213.61,20.8,171.38-7.18,128.08,1.62c-31.48,6.39-56.09,31-62.48,62.48H16C7.16,64.1,0,71.26,0,80.1s7.16,16,16,16ZM144,32.1c26.51,0,48,21.49,48,48s-21.49,48-48,48-48-21.49-48-48,21.49-48,48-48Z"/>
+            <path stroke-width="0" fill="currentColor"
+                  d="m464,224.1h-49.6c-8.79-43.3-51.02-71.27-94.32-62.48-31.48,6.39-56.09,31-62.48,62.48H16c-8.84,0-16,7.16-16,16s7.16,16,16,16h241.6c8.79,43.3,51.02,71.27,94.32,62.48,31.48-6.39,56.09-31,62.48-62.48h49.6c8.84,0,16-7.16,16-16s-7.16-16-16-16h0Zm-128,64c-26.51,0-48-21.49-48-48s21.49-48,48-48,48,21.49,48,48-21.49,48-48,48Z"/>
         </symbol>
 
 
-
+        <symbol id="svg-down" viewBox="0 0 12 7" fill="none">
+            <path fill="currentColor"
+                  d="M6.46829 6.8099L11.8083 1.50753C11.932 1.38499 12 1.22128 12 1.04667C12 0.872064 11.932 0.708356 11.8083 0.585816L11.4151 0.195192C11.159 -0.0588474 10.7424 -0.0588475 10.4868 0.195192L6.00244 4.64778L1.51317 0.190348C1.38951 0.0678084 1.22488 5.3541e-08 1.04902 4.58542e-08C0.873172 3.81674e-08 0.708293 0.0678084 0.584635 0.190348L0.191465 0.58073C0.0678056 0.703512 -0.000243873 0.866978 -0.00024388 1.04158C-0.000243888 1.21619 0.0678055 1.3799 0.191465 1.50244L5.53634 6.80965C5.66024 6.93268 5.82585 7 6.00195 6.99976C6.17854 7.00024 6.34415 6.93268 6.46805 6.80965L6.46829 6.8099Z"
+                  />
+        </symbol>
     </svg>
 </div>
 
