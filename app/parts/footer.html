@@ -239,6 +239,63 @@
         </div>
     </div>
 </div>
+
+<div class="offcanvas offcanvas-top" id="mobNav">
+    <div class="container">
+        <div class="offcanvas-header">
+            <a href="/">
+                <img src="images/dist/logo2.svg" loading="lazy" width="98" height="17" alt="">
+            </a>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close">
+                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M11.8322 10.0003L19.6201 2.21223C20.1271 1.70583 20.1271 0.88635 19.6201 0.379951C19.1137 -0.126447 18.2942 -0.126447 17.7878 0.379951L10 8.16803L2.21216 0.379951C1.70577 -0.126447 0.886929 -0.126447 0.379938 0.379951C-0.127053 0.88635 -0.127053 1.70583 0.379938 2.21223L8.16778 10.0003L0.379938 17.7884C-0.127053 18.2948 -0.127053 19.1143 0.379938 19.6207C0.632218 19.8736 0.964133 20 1.29605 20C1.62796 20 1.95927 19.8729 2.21216 19.6207L10 11.8326L17.7878 19.6207C18.0407 19.8736 18.372 20 18.704 20C19.0359 20 19.3672 19.8729 19.6201 19.6207C20.1271 19.1143 20.1271 18.2948 19.6201 17.7884L11.8322 10.0003Z"
+                          fill="black"/>
+                </svg>
+            </button>
+        </div>
+        <div class="offcanvas-body">
+            <ul class="nav mob-nav">
+                <li>
+                    <a href="#mob1" class="collapsed mob-nav__dropdown" data-bs-toggle="collapse"
+                       data-bs-target="#mob1">
+                        <span>Продукция</span>
+                        <svg width="12" height="7">
+                            <use xlink:href="#svg-down"></use>
+                        </svg>
+                    </a>
+                    <div class="accordion-collapse collapse" id="mob1">
+                        <ul class="nav mob-nav__sub-menu">
+                            <li><a href="">Фордек – 124</a></li>
+                            <li><a href="">Тележка для чистого белья</a></li>
+                            <li><a href="">Тележка для мокрого белья</a></li>
+                            <li><a href="">Стеллаж</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li>
+                    <a href="">О компании</a>
+                </li>
+                <li>
+                    <a href="">Нэвиол в СМИ</a>
+                </li>
+                <li>
+                    <a href="">Дилерам</a>
+                </li>
+                <li>
+                    <a href="">Контакты</a>
+                </li>
+            </ul>
+
+            <a href="tel:88003007801" class="mob-nav-phone">8 800 300-78-01</a>
+            <a href="mailto:info@neviol.ru" class="mob-nav-email">info@neviol.ru</a>
+            <button class="btn btn--border2 mob-nav-btn" data-bs-toggle="modal" data-bs-target="#telModal"><span>Заказать звонок</span></button>
+            <div class="mob-nav-footer">
+                <a href="">Политика конфиденциальности</a>
+            </div>
+        </div>
+    </div>
+</div>
+
 <!--#include virtual="/parts/sprite.html" -->
 </div><!-- end main-->
 <script src="js/vendor.min.js"></script>
