@@ -1,17 +1,19 @@
 <!--#set var="title" value="Контакты" -->
 <!--#include virtual="/parts/header-page.html" -->
 <div class="container fpad80">
-    <h1 class="page-title">Контактная <span class="text-nowrap">информация</span></h1>
+    <div class="fade_in_up">
+        <h1 class="page-title">Контактная <span class="text-nowrap">информация</span></h1>
+    </div>
     <div class="contact-info">
-        <div class="contact-info__item contact-info__item--col-phone">
+        <div class="contact-info__item contact-info__item--col-phone fade_in_up" data-delay="0.2">
             <div class="contact-info__item__label">Телефон</div>
             <a href="tel:88003007801" class="tel">8 800 300-78-01</a>
         </div>
-        <div class="contact-info__item contact-info__item--col-email">
+        <div class="contact-info__item contact-info__item--col-email fade_in_up" data-delay="0.4">
             <div class="contact-info__item__label">E-MAIL</div>
             <a href="mailto:info@neviol.ru" class="mail">info@neviol.ru</a>
         </div>
-        <div class="contact-info__item contact-info__item--col-adr">
+        <div class="contact-info__item contact-info__item--col-adr fade_in_up" data-delay="0.6">
             <div class="contact-info__item__label">Адрес</div>
             <div class="address">192019, Санкт-Петербург, <span class="text-nowrap">ул. Седова, д. 11А</span></div>
         </div>
@@ -23,18 +25,18 @@
         async function initMap() {
             await ymaps3.ready;
 
-            const { YMap, YMapDefaultSchemeLayer, YMapDefaultFeaturesLayer, YMapControls, YMapMarker } = ymaps3;
-            const { YMapZoomControl } = await ymaps3.import('@yandex/ymaps3-controls@0.0.1');
+            const {YMap, YMapDefaultSchemeLayer, YMapDefaultFeaturesLayer, YMapControls, YMapMarker} = ymaps3;
+            const {YMapZoomControl} = await ymaps3.import('@yandex/ymaps3-controls@0.0.1');
 
 
             // Создаем карту
             const map = new YMap(document.getElementById('map'), {
-                location: { center: [37.6176, 55.7558], zoom: 12 },
+                location: {center: [37.6176, 55.7558], zoom: 12},
                 behaviors: ['drag', 'pinchZoom', 'dblClick'],
 
             });
 
-            const controlsContainer = new YMapControls({ position: 'right' });
+            const controlsContainer = new YMapControls({position: 'right'});
             controlsContainer.addChild(new YMapZoomControl({}));
             map.addChild(controlsContainer);
 
@@ -47,7 +49,8 @@
             markerElement.className = 'my-marker';
 
             const marker = new YMapMarker(
-                { coordinates: [37.6176, 55.7558],
+                {
+                    coordinates: [37.6176, 55.7558],
                     icon: {
 
                         size: [48, 64],
@@ -58,14 +61,14 @@
                 markerElement
             );
 
-           /* const marker = new Marker({
-                coordinates: [37.6176, 55.7558],
-                icon: {
-                    href: '/images/dist/marker.png',
-                    size: [48, 64],
-                    offset: [24, 64]
-                }
-            });*/
+            /* const marker = new Marker({
+                 coordinates: [37.6176, 55.7558],
+                 icon: {
+                     href: '/images/dist/marker.png',
+                     size: [48, 64],
+                     offset: [24, 64]
+                 }
+             });*/
 
             map.addChild(marker);
         }
