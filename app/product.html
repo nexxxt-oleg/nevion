@@ -1,8 +1,8 @@
 <!--#set var="title" value="ФОРДЕК – 124" -->
 <!--#include virtual="/parts/header.html" -->
 
-<div class="single-product">
-    <div class="single-product__header">
+<div class="single-product" >
+    <div class="single-product__header" id="singleNav">
         <div class="container">
             <div class="breadcrumbs">
                 <ul class="nav breadcrumbs__list">
@@ -39,39 +39,45 @@
                     <h1>ФОРДЕК – 124</h1>
                 </div>
                 <div class="single-product__header__sub-title">
-                    <p>Камбузная электрическая плита с духовым шкафом</p>
+                    <p>Камбузная электрическая плита <span class="text-nowrap">с духовым шкафом</span></p>
                 </div>
 
             </div>
 
         </div>
-    </div>
-    <div class="single-product__nav" id="singleNav">
-        <div class="container">
-            <div class="single-product__nav__wrap">
-                <ul class="single-product__nav__list nav">
-                    <li>
-                        <a href="#nav1">Описание</a>
-                    </li>
-                    <li>
-                        <a href="#nav2">Характеристики</a>
-                    </li>
-                    <li>
-                        <a href="#nav3">Размеры</a>
-                    </li>
-                    <li>
-                        <a href="#nav4">Галерея</a>
-                    </li>
-                    <li>
-                        <a href="">Скачать презентацию</a>
-                    </li>
-                </ul>
-                <a href="" class="btn btn--blue btn--h64">
-                    <span>Получить КП</span>
-                </a>
+        <div class="single-product__fix-menu" >
+            <div class="single-product__nav">
+                <div class="container">
+                    <div class="single-product__nav__wrap">
+                        <ul class="single-product__nav__list nav">
+                            <li>
+                                <a href="#nav1">Описание</a>
+                            </li>
+                            <li>
+                                <a href="#nav2">Характеристики</a>
+                            </li>
+                            <li>
+                                <a href="#nav3">Размеры</a>
+                            </li>
+                            <li>
+                                <a href="#nav4">Галерея</a>
+                            </li>
+                            <li>
+                                <a href="">Скачать презентацию</a>
+                            </li>
+                        </ul>
+                        <a href="" class="btn btn--blue btn--h64">
+                            <span>Получить КП</span>
+                        </a>
+                        <a href="" class="btn btn--blue btn--h64 d-lg-none">
+                            <span>Скачать презентацию</span>
+                        </a>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
+
     <div class="single-product__body">
         <div class="container">
             <div class="single-product__top-video">
@@ -96,7 +102,8 @@
                             </div>
                             <div class="single-product__card__img justify-content-center">
                                 <picture>
-                                    <source srcset="images/dist/c1.png 1x, images/dist/c1@2.png 2x">
+                                    <source srcset="images/dist/c1_mob.png" media="(max-width: 574px)">
+                                    <source srcset="images/dist/c1.png 1x, images/dist/c1@2.png 2x" media="(min-width: 574.1px)">
                                     <img src="images/dist/c1.png" width="315" height="271" loading="lazy" alt="">
                                 </picture>
                             </div>
@@ -111,14 +118,15 @@
                             </div>
                             <div class="single-product__card__img justify-content-end">
                                 <picture>
-                                    <source srcset="images/dist/c2.png 1x, images/dist/c2@2.png 2x">
+                                    <source srcset="images/dist/c2_mob.png" media="(max-width: 574px)">
+                                    <source srcset="images/dist/c2.png 1x, images/dist/c2@2.png 2x" media="(min-width: 574.1px)">
                                     <img src="images/dist/c2.png" width="350" height="353" loading="lazy" alt="">
                                 </picture>
                             </div>
                         </div>
                     </div>
                     <div class="col-lg-4 fpad16">
-                        <div class="single-product__card" style="background-color: #000;">
+                        <div class="single-product__card" style="background: linear-gradient(360deg, #000 0%, #353535 100%);">
                             <div class="single-product__card__wrap single-product__card__wrap--white mt-auto">
                                 <h3>Ножки позволяют <br>регулировать высоту</h3>
                                 <p>Устойчивость к качке — <br>
@@ -126,7 +134,8 @@
                             </div>
                             <div class="single-product__card__img single-product__card__img--top justify-content-end">
                                 <picture>
-                                    <source srcset="images/dist/c3.png 1x, images/dist/c3@2.png 2x">
+                                    <source srcset="images/dist/c3_mob.png" media="(max-width: 574px)">
+                                    <source srcset="images/dist/c3.png 1x, images/dist/c3@2.png 2x" media="(min-width: 574.1px)">
                                     <img src="images/dist/c3.png" width="390" height="450" loading="lazy" alt="">
                                 </picture>
                             </div>
@@ -151,7 +160,9 @@
                                     Питание и мощность
                                 </div>
                             </div>
-                            <div class="single-product__params__list">
+                            <div class="single-product__params__line-mob">
+                            </div>
+                            <div class="single-product__params__list single-product__params__list--mob-col-4">
                                 <div class="single-product__params__item">
                                     <div class="single-product__params__item__label">Возможные подключения <br>на 50 и
                                         60 Гц:
@@ -182,6 +193,8 @@
                             </div>
                             <div class="single-product__params__line">
                             </div>
+                            <div class="single-product__params__line-mob">
+                            </div>
                             <div class="single-product__params__list">
                                 <div class="single-product__params__item">
                                     <div class="single-product__params__item__label">Мощность</div>
@@ -189,12 +202,16 @@
                                         15,2 кВт
                                     </div>
                                 </div>
+                                <div class="single-product__params__line-mob">
+                                </div>
                                 <div class="single-product__params__item">
                                     <div class="single-product__params__item__label">4 комфорки</div>
                                     <div class="single-product__params__item__val">
                                         по 3 кВт
                                         <span>каждая</span>
                                     </div>
+                                </div>
+                                <div class="single-product__params__line-mob">
                                 </div>
                                 <div class="single-product__params__item">
                                     <div class="single-product__params__item__label">Мощность <br>духового шкафа</div>
@@ -212,9 +229,10 @@
                                 <p>4 шт. по 3 кВт каждая установлены на откидные панели<br><br>
                                     Система термозащиты и аварийным расцепителем исключает ожоги и перегрев</p>
                             </div>
-                            <div class="single-product__card__img justify-content-end">
+                            <div class="single-product__card__img justify-content-center">
                                 <picture>
-                                    <source srcset="images/dist/c4.jpg 1x, images/dist/c4@2.jpg 2x">
+                                    <source srcset="images/dist/c4_mob.png" media="(max-width: 574px)">
+                                    <source srcset="images/dist/c4.jpg 1x, images/dist/c4@2.jpg 2x" media="(min-width: 574.1px)">
                                     <img src="images/dist/c4.jpg" width="1200" height="450" loading="lazy" alt="">
                                 </picture>
                             </div>
@@ -255,9 +273,10 @@
                                 <h3>Выдвижной поддон</h3>
                                 <p>Соберет всю жидкость пролитую <br>на рабочую поверхность конфорок</p>
                             </div>
-                            <div class="single-product__card__img justify-content-end">
+                            <div class="single-product__card__img justify-content-center">
                                 <picture>
-                                    <source srcset="images/dist/c6.jpg 1x, images/dist/c6@2.jpg 2x">
+                                    <source srcset="images/dist/c6_mob.png" media="(max-width: 574px)">
+                                    <source srcset="images/dist/c6.jpg 1x, images/dist/c6@2.jpg 2x" media="(min-width: 574.1px)">
                                     <img src="images/dist/c6.jpg" width="795" height="450" loading="lazy" alt="">
                                 </picture>
                             </div>
@@ -274,7 +293,8 @@
                             </div>
                             <div class="single-product__card__img justify-content-end">
                                 <picture>
-                                    <source srcset="images/dist/c7.jpg 1x, images/dist/c7@2.jpg 2x">
+                                    <source srcset="images/dist/c7_mob.png" media="(max-width: 574px)">
+                                    <source srcset="images/dist/c7.jpg 1x, images/dist/c7@2.jpg 2x" media="(min-width: 574.1px)">
                                     <img src="images/dist/c7.jpg" width="1200" height="450" loading="lazy" alt="">
                                 </picture>
                             </div>
@@ -319,7 +339,7 @@
                     </div>
                     <div class="col-lg-8 fpad16">
                         <div class="single-product__card" style="background-color: #222c46;">
-                            <div class="single-product__card__wrap single-product__card__wrap--white mt-auto mb-auto mw-320">
+                            <div class="single-product__card__wrap single-product__card__wrap--white mt-lg-auto mb-auto mw-320">
                                 <h3>
                                     <span class="big">GN 2/1</span>
                                     формат противней
@@ -327,16 +347,17 @@
                                 <p>Возможность готовить большее количество порций одновременно, экономя время и
                                     электроэнергию</p>
                             </div>
-                            <div class="single-product__card__img justify-content-end align-items-center h-100">
-                                <picture>
-                                    <source srcset="images/dist/c8.png 1x, images/dist/c8@2.png 2x">
+                            <div class="single-product__card__img justify-content-lg-end justify-content-center  align-items-lg-center h-100">
+                                <picture >
+                                    <source srcset="images/dist/c8_mob.jpg" media="(max-width: 768px)">
+                                    <source srcset="images/dist/c8.png 1x, images/dist/c8@2.png 2x" media="(min-width: 768.1px)">
                                     <img src="images/dist/c8.png" width="315" height="274" loading="lazy" alt="">
                                 </picture>
                             </div>
                         </div>
                     </div>
                     <div class="col-lg-6 fpad16">
-                        <div class="single-product__card" style="background-color: #655c5b;">
+                        <div class="single-product__card" style="background-color: #000;">
                             <div class="single-product__card__wrap single-product__card__wrap--white mt-auto mb-auto mw-320">
                                 <h3>
                                     Возможность независимого
@@ -347,14 +368,15 @@
                             </div>
                             <div class="single-product__card__img justify-content-center align-items-center h-100">
                                 <picture>
-                                    <source srcset="images/dist/c9.jpg 1x, images/dist/c9@2.jpg 2x">
+                                    <source srcset="images/dist/c9_mob.jpg" media="(max-width: 768px)">
+                                    <source srcset="images/dist/c9.jpg 1x, images/dist/c9@2.jpg 2x" media="(min-width: 768.1px)">
                                     <img src="images/dist/c9.jpg" width="593" height="449" loading="lazy" alt="">
                                 </picture>
                             </div>
                         </div>
                     </div>
                     <div class="col-lg-6 fpad16">
-                        <div class="single-product__card" style="background-color: #000;">
+                        <div class="single-product__card" style="background-color: #655c5b;">
                             <div class="single-product__card__wrap single-product__card__wrap--white mt-auto mb-auto mw-320">
                                 <h3>
                                     Автоматическое освещение
@@ -363,7 +385,8 @@
                             </div>
                             <div class="single-product__card__img justify-content-end align-items-center h-100">
                                 <picture>
-                                    <source srcset="images/dist/c10.png 1x, images/dist/c10@2.png 2x">
+                                    <source srcset="images/dist/c10_mob.jpg" media="(max-width: 768px)">
+                                    <source srcset="images/dist/c10.png 1x, images/dist/c10@2.png 2x"  media="(min-width: 768.1px)">
                                     <img src="images/dist/c10.png" width="593" height="453" loading="lazy" alt="">
                                 </picture>
                             </div>
@@ -589,6 +612,98 @@
 <div class="container">
     <div class="single-product__gallery" id="nav4">
         <h2 class="title-center">галерея</h2>
+        <div class="gallery-box slider">
+            <div class="swiper overflow-visible" id="gallerySlider">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <a href="images/dist/s1.jpg" data-fancybox="gal" class="gallery-box__item">
+                            <img src="images/dist/s1.jpg" width="390" height="430" alt="">
+                        </a>
+                    </div>
+                    <div class="swiper-slide">
+                        <a href="images/dist/s2.jpg" data-fancybox="gal" class="gallery-box__item">
+                            <img src="images/dist/s2.jpg" width="390" height="430" alt="">
+                        </a>
+                    </div>
+                    <div class="swiper-slide">
+                        <a href="images/dist/s3.jpg" data-fancybox="gal" class="gallery-box__item">
+                            <img src="images/dist/s3.jpg" width="390" height="430" alt="">
+                        </a>
+                    </div>
+                    <div class="swiper-slide">
+                        <a href="images/dist/s4.jpg" data-fancybox="gal" class="gallery-box__item">
+                            <img src="images/dist/s4.jpg" width="390" height="430" alt="">
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <button class="slider__nav slider__nav--next swiper-button-disabled" id="gallerySliderNext">
+                <svg width="14" height="24">
+                    <use xlink:href="#svg-right"></use>
+                </svg>
+            </button>
+            <button class="slider__nav slider__nav--prev swiper-button-disabled" id="gallerySliderPrev">
+                <svg width="14" height="24">
+                    <use xlink:href="#svg-left"></use>
+                </svg>
+            </button>
+        </div>
+    </div>
+    <div class="fpad100">
+        <h2 class="title-center">Часто задаваемые вопросы</h2>
+        <div class="faq">
+            <div class="faq__item">
+                <div class="collapsed faq__item__header" data-bs-toggle="collapse" data-bs-target="#faq1">
+                    Подходит ли эта плита для установки в условиях ограниченного пространства?
+                    <div class="faq__item__header__ico">
+                        <svg width="12" height="7">
+                            <use xlink:href="#svg-down"></use>
+                        </svg>
+                    </div>
+                </div>
+                <div class="accordion-collapse collapse" id="faq1">
+                    <div class="faq__item__body">
+                        Плита спроектирована для максимально быстрой очистки: она оснащена легкосъемными многоразовыми
+                        фильтрами и специальным поддоном под конфорками, что значительно экономит время персонала и
+                        помогает соблюдать санитарные нормы.
+                    </div>
+                </div>
+            </div>
+            <div class="faq__item">
+                <div class="collapsed faq__item__header" data-bs-toggle="collapse" data-bs-target="#faq2">
+                    Подходит ли эта плита для установки в условиях ограниченного пространства?
+                    <div class="faq__item__header__ico">
+                        <svg width="12" height="7">
+                            <use xlink:href="#svg-down"></use>
+                        </svg>
+                    </div>
+                </div>
+                <div class="accordion-collapse collapse" id="faq2">
+                    <div class="faq__item__body">
+                        Плита спроектирована для максимально быстрой очистки: она оснащена легкосъемными многоразовыми
+                        фильтрами и специальным поддоном под конфорками, что значительно экономит время персонала и
+                        помогает соблюдать санитарные нормы.
+                    </div>
+                </div>
+            </div>
+            <div class="faq__item">
+                <div class="collapsed faq__item__header" data-bs-toggle="collapse" data-bs-target="#faq3">
+                    Подходит ли эта плита для установки в условиях ограниченного пространства?
+                    <div class="faq__item__header__ico">
+                        <svg width="12" height="7">
+                            <use xlink:href="#svg-down"></use>
+                        </svg>
+                    </div>
+                </div>
+                <div class="accordion-collapse collapse" id="faq3">
+                    <div class="faq__item__body">
+                        Плита спроектирована для максимально быстрой очистки: она оснащена легкосъемными многоразовыми
+                        фильтрами и специальным поддоном под конфорками, что значительно экономит время персонала и
+                        помогает соблюдать санитарные нормы.
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
     <div class="fpad50">
         <div class="subscription">

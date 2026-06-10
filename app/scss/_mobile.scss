@@ -37,6 +37,69 @@
 }
 
 @media screen and (max-width: 991px) {
+  .single-product__section {
+    padding-top: 50px;
+  }
+  .single-product__section__header{
+    padding-bottom: 30px;
+  }
+  .single-product__params__list--mob-col-4 {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px 10px;
+    flex-direction: row;
+    align-items: flex-end;
+    .single-product__params__item {
+      width: calc(50% - 5px);
+    }
+    .single-product__params__item__label {
+      width: 250px;
+      padding-bottom: 20px;
+    }
+  }
+  .single-product__params {
+    display: block;
+    padding: 30px 20px;
+    height: auto;
+  }
+  .single-product__params__power {
+    width: 100%;
+  }
+  .single-product__params__line {
+    display: none;
+  }
+  .single-product__params__line-mob {
+    display: block;
+    height: 1px;
+    width: 100%;
+    margin: 20px 0;
+    background: rgba(255, 255, 255, 0.1);
+  }
+  .single-product__params__list {
+    width: 100%;
+  }
+  .single-product__section__header__title {
+    font-size: 30px;
+  }
+  .single-product__section__header__subtitle {
+    font-size: 24px;
+  }
+  .single-product__header__wrap {
+    min-height: auto;
+  }
+  .single-product__header__sub-title p {
+    font-size: 18px;
+  }
+  .single-product__header {
+    height: auto;
+  }
+  .single-product__nav__list {
+    display: none;
+  }
+  .single-product__header__title h1 {
+    font-size: 40px;
+    line-height: 1.3;
+  }
   .dealers-partners__order {
     padding: 40px 50px;
   }
@@ -290,6 +353,102 @@
 }
 
 @media screen and (max-width: 768px) {
+  .single-product__card {
+    padding: 30px 20px;
+    border-radius: 20px;
+    height: 375px;
+  }
+  .single-product__card__wrap p {
+    font-size: 14px;
+    line-height: 1.2;
+  }
+  .single-product__card__wrap h3 {
+    font-size: 16px;
+    padding-bottom: 15px;
+  }
+  .single-product__card--full {
+    padding-left: 20px;
+  }
+  .single-product__params__power {
+    svg {
+      width: 22px;
+      height: 36px;
+    }
+  }
+  .single-product__params__power__label {
+    font-size: 16px;
+  }
+  .single-product__params__item__label {
+    font-size: 14px;
+  }
+  .single-product__params__item__val {
+    font-size: 24px;
+    span {
+      font-size: 12px;
+    }
+  }
+  .single-product__header {
+    background-image: url("../images/dist/bg-top_mob.svg");
+    background-size: 100% auto;
+  }
+  .single-product__section__header {
+    padding-bottom: 20px;
+  }
+  .single-product__section__header__title {
+    font-size: 24px;
+  }
+  .single-product__section__header__subtitle {
+    font-size: 20px;
+  }
+  .single-product__section {
+    padding-top: 40px;
+  }
+  .single-product__body {
+    padding-top: 0;
+  }
+  .single-product__nav {
+    position: relative;
+    left: auto;
+    top: auto;
+    right: auto;
+  }
+  .single-product__fix-menu {
+    height: auto;
+  }
+  .single-product__header{
+    padding-bottom: 50px;
+    .single-product__nav__wrap {
+      flex-wrap: wrap;
+    }
+  }
+  .single-product__header__wrap {
+    padding-bottom: 20px;
+  }
+  .single-product__header__title {
+    margin-top: -30px;
+  }
+  .single-product__header__title h1 {
+    font-size: 32px;
+  }
+  .single-product__header__sub-title {
+    font-weight: 500;
+    font-size: 16px;
+  }
+  .single-product__header__ip {
+    width: 48px;
+    height: 48px;
+    border-radius: 24px;
+    padding: 10px;
+    top: 0;
+    right: -20px;
+  }
+  .single-product__header__img {
+    width: 260px;
+    height: 210px;
+  }
+  .single-product__header {
+    padding-top: 76px;
+  }
   .dealers-partners__order {
     padding-left: 20px;
     padding-right: 20px;
@@ -562,5 +721,23 @@
   }
   .form-item__inp {
     padding-left: 10px;
+  }
+  .single-product__card__img {
+    height: 100%;
+  }
+  .single-product__card__wrap h3 .big {
+    font-size: 32px;
+  }
+}
+
+@media screen and (max-width: 574px) {
+  .single-product__card__img img {
+    width: 300px;
+  }
+  .single-product__card__img .single-product__card__video {
+    max-width: 280px;
+  }
+  .single-product__card--full .single-product__card__wrap.mt-auto {
+    margin-top: 0 !important;
   }
 }
